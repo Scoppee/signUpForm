@@ -3,3 +3,144 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('../fonts/norse-bold/norse-bold-webfont.woff2') format('woff2'),
+         url('../fonts/norse-bold/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'montserratregular';
+
+}
+
+.overall{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width:25%;
+    height:auto;
+    background-image: url(../solarpanel1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .center-logo{
+    padding: 10px 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .center-logo .image-div{
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar .center-logo .image-div  img{
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar .center-logo p{
+    font-family: 'norsebold';
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.main-form{
+    width: 75%;
+    padding-top: 60px;
+}
+
+.intro{
+    padding: 0 300px 20px 40px;
+}
+
+.main-form p{
+    padding-top: 20px;
+}
+
+.form-container{
+    padding: 20px 0px 20px 40px ;
+    background-color: #fff;
+}
+
+.form-container form{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-container form div{
+    width: 50%;
+    margin-bottom: 20px;
+}
+button{
+    padding: 15px 30px 15px 30px;
+    border: none;
+    margin: 20px 0 0 40px;
+    background-color: orange;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.form-overall p{
+    padding-left: 40px;
+}
+
+h4{
+    font-family: 'montserratsemibold';
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+input{
+    width: 70%;
+    padding: 9px 0 9px 10px;
+    outline: 1px solid #E5E7EB;
+}
+
+input:focus{
+    outline: 1px solid lightskyblue;
+}
+
+
+.password:invalid{
+    outline: red    ;
+}
+
+/* .youknow{
+    margin-top: 20px;
+} */
